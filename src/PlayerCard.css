@@ -1,0 +1,59 @@
+
+.PlayerCard {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 40px;
+    background-color: #ffffff;
+    margin: 6px 0 0 0;
+    padding: 0 4px;
+    border-radius: 4px;
+}
+
+.PlayerCard:hover {
+    transition-duration: 0.1s;
+    box-shadow: 0 3px 7px 1px rgba(0,0,0,0.4);
+}
+
+.PlayerCard label {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.PlayerCard .Name-input-container {
+    flex-shrink: 3;
+    flex-grow: 1;
+    width:70px;
+}
+
+.PlayerCard .Name-input-container #name {
+    width: 100%;
+}
+
+.PlayerCard .Score-on-hole-container {
+    display: flex;
+}
+
+.PlayerCard .Score-on-hole-container .Buttons-container {
+    margin: auto 0 0 6px;
+}
+
+.PlayerCard .Score-on-hole-container .Buttons-container * {
+    margin: 0 4px;
+}
+
+@media only screen and (max-width: 380px) {
+    .PlayerCard {
+      height: auto;
+      align-items: center;
+    }
+
+    .PlayerCard .Score-on-hole-container {
+        align-items: center;
+    }
+
+    .PlayerCard .Score-on-hole-container .Buttons-container {
+        margin: 4px 0 0 6px;
+    }
+
+  }

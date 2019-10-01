@@ -1,0 +1,82 @@
+.name-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 40px;
+    background-color: #ffffff;
+    margin: 6px 0 0 0;
+    padding: 0 4px;
+    border-radius: 4px;
+}
+
+.Scorecard label {
+    display:block;
+    font-size: 12px;
+    align-self: flex-start;
+}
+
+.Scorecard span {
+    text-align: inherit;
+    font-weight: 700;
+}
+
+.Scorecard input {
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.Scorecard add-button {
+    margin-top: auto;
+}
+
+.Scorecard input:focus {
+    outline: none;
+}
+
+.hole-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #ffffff;
+    margin: 6px 0 0 0;
+    padding: 0 4px;
+    border-radius: 4px;
+}
+
+.hole-input-container .par-container {
+    display: flex;
+}
+
+.hole-input-container .par-container .par-buttons-container {
+    margin: auto 0 0 6px;
+}
+.hole-input-container .par-container .par-buttons-container * {
+    margin: 0 4px;
+}
+
+.hole-input-container .buttons-container {
+    margin-top: auto;
+}
+
+.hole-input-container .buttons-container * {
+    margin: 0 8px 0 0;
+}
+
+.Scorecard .section:hover {
+    transition-duration: 0.1s;
+    box-shadow: 0 3px 7px 1px rgba(0,0,0,0.4);
+}
+
+.Scorecard .players-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+}
+
+.Scorecard .players-container h2 {
+    margin: 12px 0 12px 0;
+    font-size: 22px;
+}

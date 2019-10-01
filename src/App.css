@@ -1,0 +1,100 @@
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.App {
+  background-color: #f7f7f7;
+  text-align: center;
+  display: grid;
+  grid-template-columns:20px auto 20px;
+  grid-template-rows: 60px auto 90px;
+  grid-template-areas: 
+    "header header header"
+    ". main ."
+    "footer footer footer";
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.App-logo {
+  height: 50px;
+  margin: 0 0 0 4px;
+}
+
+.React-logo {
+  animation: React-logo-spin infinite 5s ease-in-out;
+  height: 50px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.App-header {
+  grid-area: header;
+  background-color: #282c34;
+  align-items: center;
+  display: flex;
+}
+
+.App-main {
+  grid-area: main;
+  overflow: auto;
+  padding: 0 5px;
+}
+
+.Scoreboards-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Scorecard-mini-card {
+  display: grid;
+  grid-template-columns:auto auto;
+  grid-template-rows: 60% 40%;
+  height:50px;
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.Scorecard-mini-card .Card-header {
+  font-weight: bold;
+  justify-self: left;
+}
+
+.Scorecard-mini-card:hover {
+  transform: translate(-1px, -2px);
+  transition-duration: 0.1s;
+  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+}
+
+.App-footer {
+  grid-area: footer;
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-footer-text-box {
+  display: inline-block;
+}
+
+.App-link {
+  display: block;
+  color: #61dafb;
+}
+
+@keyframes React-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

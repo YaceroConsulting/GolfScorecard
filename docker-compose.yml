@@ -1,0 +1,13 @@
+version: "2"
+services:
+  node:
+    image: "node:10"
+    user: "node"
+    working_dir: /Development/Github/GolfScorecard/web-app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/Development/Github/GolfScorecard/web-app
+    expose:
+      - "8080"
+    command: "npm start"
