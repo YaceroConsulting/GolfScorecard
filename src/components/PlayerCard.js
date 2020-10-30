@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import AddButton from './Addbutton';
-import RemoveButton from './RemoveButton';
+import { AddButton } from './buttons/AddButton';
+import RemoveButton from './Icons/RemoveButton';
 import './PlayerCard.css';
 
 export default class PlayerCard extends Component {
@@ -76,7 +76,7 @@ export default class PlayerCard extends Component {
             <div className="PlayerCard">
                 <div className="Name-input-container">
                     <label>Alias:</label>
-                    <input id="name" 
+                    <input 
                         value={this.state.player.name} 
                         onChange={(e) => this.nameChange(e)}>
                     </input>

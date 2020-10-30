@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import reactLogo from './logo.svg';
-import ScorecardsList from './ScorecardsList.js';
-import Scorecard from './Scorecard.js';
+import ScorecardsList from './components/ScorecardsList';
+import Scorecard from './components/Scorecard.js';
 import './App.css';
 
 function App() {

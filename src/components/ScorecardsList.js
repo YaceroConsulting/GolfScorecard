@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import AddButton from './Addbutton';
-import Hole from './DataClasses/Hole'
+import AddButton from './buttons/AddButton';
+import Hole from '../DataClasses/Hole'
 
 class ScorecardsList extends Component {
     constructor(props) {

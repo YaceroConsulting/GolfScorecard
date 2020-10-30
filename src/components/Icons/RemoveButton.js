@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import withReadOnly from './HOCs/readOnly';
+import withReadOnly from '../higher-order/readOnly';
 import './Icons.css';
 
-class AddButton extends Component {
+class RemoveButton extends Component {
+
     render() {
         return <svg onClick={() => this.props.onClick()} version="1.1" id="add-button" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     viewBox="0 0 31.059 31.059"  >
@@ -17,13 +18,9 @@ class AddButton extends Component {
                         <path className="path" d="M21.652,16.416H9.406c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.397-0.888,0.888-0.888h12.246
                             c0.49,0,0.887,0.398,0.887,0.888C22.539,16.02,22.143,16.416,21.652,16.416z"/>
                     </g>
-                    <g>
-                        <path className="path" d="M15.529,22.539c-0.49,0-0.888-0.397-0.888-0.887V9.406c0-0.49,0.398-0.888,0.888-0.888
-                            c0.49,0,0.887,0.398,0.887,0.888v12.246C16.416,22.143,16.02,22.539,15.529,22.539z"/>
-                    </g>
                 </g>
             </svg>
     }
 }
 
-export default withReadOnly(AddButton);
+export default withReadOnly(RemoveButton);

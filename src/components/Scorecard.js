@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Hole from './DataClasses/Hole'
+import Hole from '../DataClasses/Hole'
 import './scorecard.css';
-import AddButton from './Addbutton';
-import RemoveButton from './RemoveButton';
+import { AddButton } from './buttons/AddButton';
+import RemoveButton from './Icons/RemoveButton';
 import ArrowLeft from './ArrowLeft';
 import ArrowRight from './ArrowRight';
 import PlayerCard from './PlayerCard';

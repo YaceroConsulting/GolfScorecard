@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default function withReadOnly(WrappedComponent, onClick) {
+export default function withReadOnly(WrappedComponent) {
     return class extends Component {
         constructor(props) {
             super(props);
